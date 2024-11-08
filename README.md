@@ -128,12 +128,18 @@
 
     <section class="product-section">
         <div class="product-card">
-            <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/ALFAJOJRES.jpg" alt="Alfajores">
+            <!-- Envolvemos la imagen con un enlace -->
+            <a href="https://www.instagram.com/LillabagerietM/" target="_blank">
+                <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/ALFAJOJRES.jpg" alt="Alfajores">
+            </a>
             <h2>Alfajores</h2>
             <p>Delicate cookies filled with dulce de leche, perfect for indulging yourself or as a gift for loved ones.</p>
         </div>
         <div class="product-card">
-            <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/PAN%20DE%20MUERTO.jpg" alt="Pan de Muerto">
+            <!-- Envolvemos la imagen con un enlace -->
+            <a href="https://www.instagram.com/LillabagerietM/" target="_blank">
+                <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/PAN%20DE%20MUERTO.jpg" alt="Pan de Muerto">
+            </a>
             <h2>Pan de Muerto</h2>
             <p>This traditional Mexican bread is a seasonal favorite, ideal for celebrating Día de Muertos or any occasion.</p>
         </div>
