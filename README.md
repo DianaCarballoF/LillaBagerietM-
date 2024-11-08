@@ -13,65 +13,44 @@
         }
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #faf3e0;
-            color: #333;
+            background-color: #f5f5dc; /* Beige */
+            color: #4b3832; /* Café oscuro */
         }
-
-        /* Encabezado y menú de navegación */
+        
+        /* Encabezado */
         header {
-            background-color: #c95b72;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 5px;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #a9455c;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        nav ul li {
-            position: relative;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 8px;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #faf3e0;
-        }
-
-        /* Sección Hero */
-        .hero {
-            background-image: url('https://via.placeholder.com/1200x500'); /* Reemplaza con una imagen de fondo */
+            background-image: url('https://via.placeholder.com/1200x600'); /* Reemplaza con una imagen de tus productos */
             background-size: cover;
             background-position: center;
-            padding: 80px 20px;
-            text-align: center;
             color: white;
+            text-align: center;
+            padding: 80px 20px;
         }
-        .hero h2 {
-            font-size: 2.5em;
+        header h1 {
+            font-size: 3.5em;
+            color: #4b3832; /* Café oscuro */
             margin-bottom: 10px;
         }
-        .hero p {
-            font-size: 1.2em;
+        header p {
+            font-size: 1.5em;
+            color: #fff;
             margin-bottom: 20px;
         }
-
+        .instagram-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4b3832; /* Café oscuro */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .instagram-link:hover {
+            background-color: #2f1e17; /* Café más oscuro */
+        }
+        
         /* Sección de productos */
         .product-section {
             max-width: 1000px;
@@ -83,7 +62,7 @@
             justify-content: space-around;
         }
         .product-card {
-            background-color: #fff;
+            background-color: #fff; /* Blanco */
             width: 300px;
             border-radius: 10px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -99,9 +78,9 @@
             height: auto;
             object-fit: cover;
         }
-        .product-card h3 {
+        .product-card h2 {
             font-size: 1.8em;
-            color: #c95b72;
+            color: #4b3832; /* Café oscuro */
             margin: 15px 0;
         }
         .product-card p {
@@ -110,16 +89,16 @@
             font-size: 1em;
             margin-bottom: 15px;
         }
-
+        
         /* Sección de contacto */
         .contact-section {
-            background-color: #f1e4d3;
+            background-color: #f0e4d7; /* Beige más claro */
             padding: 40px 20px;
             text-align: center;
         }
         .contact-section h2 {
             font-size: 2em;
-            color: #c95b72;
+            color: #4b3832; /* Café oscuro */
             margin-bottom: 20px;
         }
         .contact-section p {
@@ -131,51 +110,38 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
-            color: #fff;
+            background-color: #4b3832; /* Café oscuro */
+            color: #fff; /* Blanco */
             font-size: 0.9em;
         }
     </style>
 </head>
 <body>
 
-    <!-- Encabezado y menú de navegación -->
     <header>
         <h1>Lilla Bageriet</h1>
+        <p>Handcrafted Baked Goods with a Touch of Tradition</p>
+        <a href="https://www.instagram.com/LillabagerietM/" class="instagram-link" target="_blank">
+            Visit Our Instagram
+        </a>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Sección Hero -->
-    <section class="hero" id="home">
-        <h2>Welcome to Lilla Bageriet</h2>
-        <p>Handcrafted Baked Goods with Love and Tradition</p>
-    </section>
-
-    <!-- Sección de productos -->
-    <section class="product-section" id="products">
+    <section class="product-section">
         <div class="product-card">
             <img src="https://via.placeholder.com/300x200" alt="Pan de Muerto">
-            <h3>Pan de Muerto</h3>
-            <p>Traditional Mexican bread for Día de Muertos, filled with rich flavors and memories.</p>
+            <h2>Pan de Muerto</h2>
+            <p>This traditional Mexican bread is a seasonal favorite, ideal for celebrating Día de Muertos or any occasion.</p>
         </div>
         <div class="product-card">
             <img src="https://via.placeholder.com/300x200" alt="Alfajores">
-            <h3>Alfajores</h3>
-            <p>Delicious cookies filled with dulce de leche, perfect for indulging or sharing.</p>
+            <h2>Alfajores</h2>
+            <p>Delicate cookies filled with dulce de leche, perfect for indulging yourself or as a gift for loved ones.</p>
         </div>
     </section>
 
-    <!-- Sección de contacto -->
-    <section class="contact-section" id="contact">
+    <section class="contact-section">
         <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:lillabageriet@example.com">lillabageriet@example.com</a></p>
+        <p>Have a question or want to place an order? Email us at <a href="mailto:lillabageriet@example.com">lillabageriet@example.com</a></p>
     </section>
 
     <footer>
