@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilla Bageriet M</title>
-    <!-- Enlace a Google Fonts (Montserrat) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Enlace a Google Fonts (Poppins y Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* Estilos generales */
         * {
@@ -13,115 +13,158 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: 'Montserrat', sans-serif; /* Aplicamos Montserrat */
+            font-family: 'Poppins', sans-serif; /* Cambié a Poppins para un toque moderno */
             background-image: url('https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/fondo.jpg');
             background-size: cover;
             background-position: center;
-            color: #4b3832; /* Café oscuro */
+            color: #333; /* Gris oscuro para mejor legibilidad */
             height: 100%;
+            line-height: 1.6;
         }
 
         /* Encabezado */
         header {
             position: relative;
             text-align: center;
-            padding: 50px 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente para contraste */
+            padding: 70px 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo más oscuro para mejor contraste */
+            backdrop-filter: blur(10px); /* Desenfoque del fondo para mayor elegancia */
         }
+
         header h1 {
-            font-size: 4.5em; /* Título más grande */
-            color: #ffffff; /* Blanco */
+            font-size: 4em;
+            color: #ffffff;
             margin-bottom: 10px;
+            font-weight: 600;
         }
+
         header p {
-            font-size: 1em;
+            font-size: 1.2em;
             color: #fff;
             margin-bottom: 20px;
+            font-weight: 400;
         }
+
         .logo {
             position: absolute;
             top: 20px;
-            left: 20px; /* Alinea el logo a la izquierda */
-            width: 120px; /* Tamaño del logo */
+            left: 20px;
+            width: 120px;
             height: auto;
         }
+
         .instagram-link {
             display: inline-block;
             padding: 12px 24px;
-            background-color: #4b3832; /* Café oscuro */
-            color: white;
+            background-color: #FFB13B; /* Amarillo cálido */
+            color: #4b3832;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: background-color 0.3s;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 15px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
         }
+
         .instagram-link:hover {
-            background-color: #2f1e17; /* Café más oscuro */
+            background-color: #F79C42; /* Color más cálido en hover */
+            transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
         }
-        
+
         /* Sección de productos */
         .product-section {
-            max-width: 1000px;
-            margin: 40px auto;
+            max-width: 1200px;
+            margin: 60px auto;
             padding: 20px;
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
             justify-content: space-around;
         }
+
         .product-card {
-            background-color: #fff; /* Blanco */
+            background-color: #fff;
             width: 300px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .product-card:hover {
             transform: scale(1.05);
+            box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.15);
         }
+
         .product-card img {
             width: 100%;
-            height: auto;
+            height: 200px;
             object-fit: cover;
+            transition: transform 0.3s ease;
         }
+
+        .product-card img:hover {
+            transform: scale(1.1);
+        }
+
         .product-card h2 {
             font-size: 1.8em;
-            color: #4b3832; /* Café oscuro */
-            margin: 15px 0;
+            color: #4b3832;
+            margin: 20px 0;
+            font-weight: 600;
         }
+
         .product-card p {
-            padding: 0 15px;
+            padding: 0 20px;
             color: #666;
             font-size: 1em;
-            margin-bottom: 15px;
-        }
-        
-        /* Sección de contacto */
-        .contact-section {
-            background-color: #ffffff; /* Fondo blanco */
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .contact-section h2 {
-            font-size: 1.4em;
-            color: #4b3832; /* Café oscuro */
             margin-bottom: 20px;
         }
-        .contact-section p {
-            font-size: 0.8em; /* Ajustado el tamaño de la fuente */
-            color: #555;
+
+        /* Sección de contacto */
+        .contact-section {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 60px;
         }
-        
+
+        .contact-section h2 {
+            font-size: 2em;
+            color: #4b3832;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .contact-section p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-section a {
+            color: #FFB13B;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            color: #F79C42;
+        }
+
         /* Pie de página */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #4b3832; /* Café oscuro */
-            color: #fff; /* Blanco */
-            font-size: 0.6em;
+            background-color: #4b3832;
+            color: #fff;
+            font-size: 0.9em;
+            font-weight: 400;
         }
 
         /* Estilos para dispositivos móviles */
@@ -129,14 +172,25 @@
             .logo {
                 left: 0;
                 right: 0;
-                margin: 0 auto; /* Centra el logo en dispositivos móviles */
-                width: 40px; /* Reducir el tamaño del logo en móviles */
+                margin: 0 auto;
+                width: 60px;
             }
+
             header h1 {
-                font-size: 3em; /* Reducir tamaño del título en móviles */
+                font-size: 3em;
             }
+
             header p {
-                font-size: 1em; /* Reducir tamaño de la descripción en móviles */
+                font-size: 1em;
+            }
+
+            .product-card {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .contact-section h2 {
+                font-size: 1.6em;
             }
         }
     </style>
@@ -147,39 +201,38 @@
     <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/LOGO.png" alt="Logo Lilla Bageriet" class="logo">
     <h1>Lilla Bageriet M</h1>
     <p>Handcrafted baked goods with a touch of tradition.</p>
-    <p>We are located in Jönköping, Sweden</p> <!-- Agregado aquí -->
+    <p>We are located in Jönköping, Sweden</p>
     <a href="https://www.instagram.com/LillabagerietM/" class="instagram-link" target="_blank">
         Visit Our Instagram
     </a>
 </header>
 
-    <section class="product-section">
-        <div class="product-card">
-            <a href="https://www.instagram.com/LillabagerietM/" target="_blank">
-                <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/ALFAJOJRES.jpg" alt="Alfajores">
-            </a>
-            <h2>Alfajores</h2>
-            <p>Delicate cookies filled with dulce de leche, chocolate or Biiscoff, perfect for indulging yourself or as a gift for loved ones.</p>
-        </div>
-        <div class="product-card">
-            <a href="https://www.instagram.com/LillabagerietM/" target="_blank">
-                <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/PAN%20DE%20MUERTO.jpg" alt="Pan de Muerto">
-            </a>
-            <h2>Pan de Muerto</h2>
-            <p>This traditional Mexican bread is a seasonal favorite, ideal for celebrating Día de Muertos or any occasion.</p>
-        </div>
-    </section>
+<section class="product-section">
+    <div class="product-card">
+        <a href="https://www.instagram.com/LillabagerietM/" target="_blank">
+            <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/ALFAJOJRES.jpg" alt="Alfajores">
+        </a>
+        <h2>Alfajores</h2>
+        <p>Delicate cookies filled with dulce de leche, chocolate or Biiscoff, perfect for indulging yourself or as a gift for loved ones.</p>
+    </div>
+    <div class="product-card">
+        <a href="https://www.instagram.com/LillabagerietM/" target="_blank">
+            <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/PAN%20DE%20MUERTO.jpg" alt="Pan de Muerto">
+        </a>
+        <h2>Pan de Muerto</h2>
+        <p>This traditional Mexican bread is a seasonal favorite, ideal for celebrating Día de Muertos or any occasion.</p>
+    </div>
+</section>
 
-   <section class="contact-section">
+<section class="contact-section">
     <h2>Contact Us</h2>
-    <p>We are located in Jönköping, Sweden</p> <!-- Agregado aquí -->
+    <p>We are located in Jönköping, Sweden</p>
     <p>Have a question or want to place an order? Email us at <a href="mailto:carballodianalaura@gmail.com">carballodianalaura@gmail.com</a></p>
 </section>
 
-    <footer>
-        &copy; 2024 Lilla Bageriet M. Jönköping, Sweden. All rights reserved.
-    </footer>
+<footer>
+    &copy; 2024 Lilla Bageriet M. Jönköping, Sweden. All rights reserved.
+</footer>
 
 </body>
 </html>
-
