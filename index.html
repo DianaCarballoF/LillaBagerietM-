@@ -43,7 +43,8 @@
         .logo {
             position: absolute;
             top: 20px;
-            left: 20px;
+            left: 50%;
+            transform: translateX(-50%);
             width: 120px; /* Tamaño del logo */
             height: auto;
         }
@@ -123,6 +124,19 @@
             background-color: #4b3832; /* Café oscuro */
             color: #fff; /* Blanco */
             font-size: 0.9em;
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 768px) {
+            .logo {
+                width: 80px; /* Reducir el tamaño del logo en móviles */
+            }
+            header h1 {
+                font-size: 3.5em; /* Reducir tamaño del título en móviles */
+            }
+            header p {
+                font-size: 1.2em; /* Reducir tamaño de la descripción en móviles */
+            }
         }
     </style>
 </head>
