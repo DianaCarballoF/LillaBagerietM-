@@ -24,9 +24,10 @@
 
         /* Encabezado */
         header {
+            position: relative;
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 50px 20px;
             background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente para contraste */
         }
         header h1 {
@@ -39,6 +40,13 @@
             color: #fff;
             margin-bottom: 20px;
         }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 120px; /* Tamaño del logo */
+            height: auto;
+        }
         .instagram-link {
             display: inline-block;
             padding: 12px 24px;
@@ -46,7 +54,6 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-weight: bold;
             margin-top: 10px;
             transition: background-color 0.3s;
         }
@@ -117,42 +124,19 @@
             color: #fff; /* Blanco */
             font-size: 0.9em;
         }
-
-        /* Menú móvil */
-        .menu-icon {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-        }
-        .menu-icon div {
-            width: 30px;
-            height: 3px;
-            background-color: #4b3832; /* Café oscuro */
-        }
-        @media (max-width: 768px) {
-            .menu-icon {
-                display: flex;
-            }
-        }
     </style>
 </head>
 <body>
 
     <header>
+        <!-- Logo en la esquina superior izquierda -->
+        <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/LOGO.png" alt="Logo Lilla Bageriet" class="logo">
         <h1>Lilla Bageriet</h1>
         <p>Handcrafted Baked Goods with a Touch of Tradition</p>
         <a href="https://www.instagram.com/LillabagerietM/" class="instagram-link" target="_blank">
             Visit Our Instagram
         </a>
     </header>
-
-    <!-- Menú de 3 rayitas para móviles -->
-    <div class="menu-icon">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
 
     <section class="product-section">
         <div class="product-card">
@@ -182,4 +166,3 @@
 
 </body>
 </html>
-
