@@ -4,152 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilla Bageriet M</title>
-    <!-- Enlace a Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Estilos generales */
+        /* Reset CSS */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: 'Quicksand', sans-serif; /* Fuente más amigable y acogedora */
-            background-color: #f9f6f1; /* Fondo suave, color crema */
-            color: #4b3832; /* Café oscuro */
-            height: 100%;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f7f7f7; /* Fondo gris suave */
+            color: #5e5e5e;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
         }
 
         /* Encabezado */
         header {
-            position: relative;
+            background: #ffffff;
             text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, rgba(255, 213, 158, 0.8), rgba(255, 153, 102, 0.8)); /* Tonos cálidos de naranja y beige */
-            color: #fff;
-            border-bottom: 8px solid #f7b7a3;
+            padding: 80px 20px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
         }
         header h1 {
-            font-size: 3.5em;
-            color: #fff;
-            font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
-            margin-bottom: 10px;
+            font-size: 3.2em;
+            color: #d78a61; /* Naranja suave para un toque acogedor */
+            font-family: 'Playfair Display', serif;
             font-weight: 600;
         }
         header p {
-            font-size: 1.2em;
-            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #a6a6a6;
+            margin-top: 10px;
             font-weight: 400;
-            font-family: 'Quicksand', sans-serif;
-        }
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 120px;
-            height: auto;
         }
         .instagram-link {
             display: inline-block;
-            padding: 12px 24px;
-            background-color: #f6a48c; /* Color suave y cálido */
+            background-color: #f4a261; /* Color suave */
             color: #fff;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
+            padding: 12px 30px;
             margin-top: 20px;
-            font-family: 'Quicksand', sans-serif;
-            transition: background-color 0.3s;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
         }
         .instagram-link:hover {
-            background-color: #e57e00; /* Color más oscuro para el hover */
+            background-color: #e07b3c; /* Color más oscuro en hover */
         }
 
-        /* Sección de productos */
+        /* Sección de Productos */
         .product-section {
-            max-width: 1200px;
-            margin: 60px auto;
-            padding: 20px;
             display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
             justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 40px auto;
+            max-width: 1200px;
+            padding: 0 20px;
         }
         .product-card {
             background-color: #fff;
-            width: 300px;
-            border-radius: 15px;
-            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
             overflow: hidden;
+            width: 32%;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
             text-align: center;
-            transition: transform 0.3s;
-            cursor: pointer;
-            border: 2px solid #f0d6b2; /* Bordes suaves y cálidos */
+            transition: transform 0.3s ease;
         }
         .product-card:hover {
             transform: scale(1.05);
         }
         .product-card img {
             width: 100%;
-            height: auto;
+            height: 200px;
             object-fit: cover;
-            border-radius: 10px;
+            border-bottom: 2px solid #f0f0f0;
         }
         .product-card h2 {
-            font-size: 1.8em;
-            color: #f6a48c; /* Naranja suave */
-            margin: 20px 0;
+            font-size: 1.7em;
+            color: #d78a61; /* Color cálido para los títulos */
+            margin-top: 20px;
             font-family: 'Playfair Display', serif;
         }
         .product-card p {
             font-size: 1em;
-            color: #666;
-            padding: 0 15px;
+            color: #707070;
+            padding: 0 20px;
             margin-bottom: 20px;
         }
 
         /* Sección de contacto */
         .contact-section {
-            background-color: #fff;
+            background-color: #ffffff;
             padding: 60px 20px;
             text-align: center;
+            margin-top: 50px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
         }
         .contact-section h2 {
-            font-size: 2em;
-            color: #4b3832;
+            font-size: 2.2em;
+            color: #d78a61;
             margin-bottom: 20px;
             font-family: 'Playfair Display', serif;
         }
         .contact-section p {
-            font-size: 1em;
-            color: #555;
+            font-size: 1.1em;
+            color: #707070;
         }
 
         /* Pie de página */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #4b3832;
-            color: #fff;
+            background-color: #f7f7f7;
             font-size: 0.9em;
+            color: #5e5e5e;
+            margin-top: 50px;
         }
 
-        /* Estilos para dispositivos móviles */
+        /* Estilo para dispositivos móviles */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em; /* Reducir tamaño del título */
-            }
-            .logo {
-                left: 50%;
-                transform: translateX(-50%);
-                width: 100px; /* Logo más pequeño en móviles */
-            }
             .product-section {
                 flex-direction: column;
                 align-items: center;
             }
             .product-card {
-                width: 90%;
+                width: 80%;
                 margin-bottom: 20px;
             }
         }
@@ -158,13 +142,9 @@
 <body>
 
 <header>
-    <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/LOGO.png" alt="Logo Lilla Bageriet" class="logo">
     <h1>Lilla Bageriet M</h1>
-    <p>Handcrafted baked goods with a touch of tradition.</p>
-    <p>Located in Jönköping, Sweden</p>
-    <a href="https://www.instagram.com/LillabagerietM/" class="instagram-link" target="_blank">
-        Visit Our Instagram
-    </a>
+    <p>Handcrafted baked goods with love</p>
+    <a href="https://www.instagram.com/LillabagerietM/" class="instagram-link" target="_blank">Follow us on Instagram</a>
 </header>
 
 <section class="product-section">
@@ -187,13 +167,12 @@
 <section class="contact-section">
     <h2>Contact Us</h2>
     <p>Located in Jönköping, Sweden</p>
-    <p>Have a question or want to place an order? Email us at <a href="mailto:carballodianalaura@gmail.com">carballodianalaura@gmail.com</a></p>
+    <p>For orders or inquiries, email us at <a href="mailto:carballodianalaura@gmail.com">carballodianalaura@gmail.com</a></p>
 </section>
 
 <footer>
-    &copy; 2024 Lilla Bageriet M. Jönköping, Sweden. All rights reserved.
+    &copy; 2024 Lilla Bageriet M. All rights reserved.
 </footer>
 
 </body>
 </html>
-
