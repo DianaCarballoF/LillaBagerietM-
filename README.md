@@ -141,7 +141,7 @@
 
     <section class="contact-section">
         <h2>Contact Us</h2>
-        <p>Have a question or want to place an order? Email us at <a href="mailto:lillabageriet@example.com">lillabageriet@example.com</a></p>
+        <p>Have a question or want to place an order? Email us at <a href="mailto:lillabagerietm@gmail.com">lillabagerietm@gmail.com</a></p>
     </section>
 
     <footer>
