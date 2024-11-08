@@ -25,45 +25,43 @@
         /* Encabezado */
         header {
             position: relative;
+            color: white;
             text-align: center;
             padding: 50px 20px;
-            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente para contraste */
         }
-
-        /* Logo */
+        header h1 {
+            font-size: 4.5em; /* Título más grande */
+            color: #ffffff; /* Blanco */
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.5em;
+            color: #fff;
+            margin-bottom: 20px;
+        }
         .logo {
             position: absolute;
-            top: 10px; /* Ajustamos la distancia del logo desde la parte superior */
+            top: 20px;
             left: 50%;
-            transform: translateX(-50%); /* Centramos el logo */
-            max-width: 120px;
-            z-index: 10;
+            transform: translateX(-50%);
+            width: 120px; /* Tamaño del logo */
+            height: auto;
         }
-
-        /* Título */
-        header h1 {
-            font-size: 3.5em;
-            color: white;
-            margin-top: 60px; /* Ajustamos la distancia para que no se sobreponga con el logo */
-        }
-
-        /* Estilos del enlace de Instagram */
         .instagram-link {
             display: inline-block;
             padding: 12px 24px;
-            background-color: #4b3832;
+            background-color: #4b3832; /* Café oscuro */
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-weight: bold;
             margin-top: 10px;
             transition: background-color 0.3s;
         }
-
         .instagram-link:hover {
-            background-color: #2f1e17;
+            background-color: #2f1e17; /* Café más oscuro */
         }
-
+        
         /* Sección de productos */
         .product-section {
             max-width: 1000px;
@@ -74,9 +72,8 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
-
         .product-card {
-            background-color: #fff;
+            background-color: #fff; /* Blanco */
             width: 300px;
             border-radius: 10px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -84,129 +81,103 @@
             text-align: center;
             transition: transform 0.3s;
         }
-
         .product-card:hover {
             transform: scale(1.05);
         }
-
         .product-card img {
             width: 100%;
             height: auto;
             object-fit: cover;
         }
-
         .product-card h2 {
             font-size: 1.8em;
-            color: #4b3832;
+            color: #4b3832; /* Café oscuro */
             margin: 15px 0;
         }
-
         .product-card p {
             padding: 0 15px;
             color: #666;
             font-size: 1em;
             margin-bottom: 15px;
         }
-
+        
         /* Sección de contacto */
         .contact-section {
-            background-color: #ffffff;
+            background-color: #ffffff; /* Fondo blanco */
             padding: 40px 20px;
             text-align: center;
         }
-
         .contact-section h2 {
             font-size: 2em;
-            color: #4b3832;
+            color: #4b3832; /* Café oscuro */
             margin-bottom: 20px;
         }
-
         .contact-section p {
-            font-size: 1.1em;
+            font-size: 1em; /* Ajustado el tamaño de la fuente */
             color: #555;
         }
-
+        
         /* Pie de página */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #4b3832;
-            color: #fff;
+            background-color: #4b3832; /* Café oscuro */
+            color: #fff; /* Blanco */
             font-size: 0.9em;
         }
 
-        /* Media Queries */
-        /* Ajustes para dispositivos móviles */
+        /* Estilos para dispositivos móviles */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em; /* Ajustamos el tamaño del título en dispositivos móviles */
-            }
-
             .logo {
-                max-width: 80px; /* Hacemos el logo más pequeño en dispositivos móviles */
+                width: 80px; /* Reducir el tamaño del logo en móviles */
             }
-
-            .instagram-link {
-                font-size: 0.9em;
-                padding: 10px 20px;
-            }
-
-            .product-card {
-                width: 100%; /* Los productos ocuparán todo el ancho disponible en pantallas pequeñas */
-            }
-
-            .product-section {
-                flex-direction: column; /* Cambiamos la disposición de los productos en móvil */
-            }
-
-            .contact-section h2 {
-                font-size: 1.8em; /* Reducimos el tamaño de los encabezados en la sección de contacto */
-            }
-        }
-
-        /* Ajustes para dispositivos más grandes */
-        @media (min-width: 769px) {
             header h1 {
-                font-size: 3.5em;
+                font-size: 3.5em; /* Reducir tamaño del título en móviles */
+            }
+            header p {
+                font-size: 1.2em; /* Reducir tamaño de la descripción en móviles */
             }
         }
-
     </style>
 </head>
 <body>
 
-    <!-- Encabezado -->
     <header>
-        <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/LOGO.png" alt="Logo de Lilla Bageriet M" class="logo">
-        <h1>Lilla Bageriet M</h1>
-        <a href="https://www.instagram.com" class="instagram-link" target="_blank">Síguenos en Instagram</a>
+        <!-- Logo en la esquina superior izquierda -->
+        <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/LOGO.png" alt="Logo Lilla Bageriet" class="logo">
+        <h1>Lilla Bageriet</h1>
+        <p>Handcrafted Baked Goods with a Touch of Tradition</p>
+        <a href="https://www.instagram.com/LillabagerietM/" class="instagram-link" target="_blank">
+            Visit Our Instagram
+        </a>
     </header>
 
-    <!-- Sección de productos -->
     <section class="product-section">
         <div class="product-card">
-            <img src="https://via.placeholder.com/300" alt="Producto 1">
-            <h2>Producto 1</h2>
-            <p>Descripción del producto 1.</p>
+            <a href="https://www.instagram.com/LillabagerietM/" target="_blank">
+                <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/ALFAJOJRES.jpg" alt="Alfajores">
+            </a>
+            <h2>Alfajores</h2>
+            <p>Delicate cookies filled with dulce de leche, perfect for indulging yourself or as a gift for loved ones.</p>
         </div>
         <div class="product-card">
-            <img src="https://via.placeholder.com/300" alt="Producto 2">
-            <h2>Producto 2</h2>
-            <p>Descripción del producto 2.</p>
+            <a href="https://www.instagram.com/LillabagerietM/" target="_blank">
+                <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/PAN%20DE%20MUERTO.jpg" alt="Pan de Muerto">
+            </a>
+            <h2>Pan de Muerto</h2>
+            <p>This traditional Mexican bread is a seasonal favorite, ideal for celebrating Día de Muertos or any occasion.</p>
         </div>
-        <!-- Agregar más productos aquí -->
     </section>
 
-    <!-- Sección de contacto -->
     <section class="contact-section">
-        <h2>Contáctanos</h2>
-        <p>Dirección, teléfono, email.</p>
+        <h2>Contact Us</h2>
+        <p>Have a question or want to place an order? Email us at <a href="mailto:lillabagerietm@gmail.com">lillabagerietm@gmail.com</a></p>
     </section>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Lilla Bageriet M. Todos los derechos reservados.</p>
+        &copy; 2024 Lilla Bageriet. All rights reserved.
     </footer>
 
 </body>
 </html>
+
