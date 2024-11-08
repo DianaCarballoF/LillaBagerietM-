@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilla Bageriet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff7f2;
+        }
+        header, footer {
+            background-color: #f8c291;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+        h1, h2, h3 {
+            color: #d35400;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 1em;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 10px);
+            max-width: calc(33.333% - 10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .contact-info, .services {
+            background-color: #fdebd0;
+            padding: 1em;
+            margin-top: 1em;
+            border-radius: 8px;
+        }
+        a {
+            color: #d35400;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lilla Bageriet</h1>
+    <p>Delicious homemade pastries, cakes, and treats</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Welcome to Lilla Bageriet</h2>
+        <p>At Lilla Bageriet, we bake with love and creativity. Our delicious homemade pastries and cakes are perfect for every occasion, made with fresh ingredients and a passion for baking.</p>
+    </section>
+
+    <section class="services">
+        <h3>Our Services</h3>
+        <ul>
+            <li>Custom cakes for birthdays, weddings, and events</li>
+            <li>Pastries and treats for every occasion</li>
+            <li>Seasonal and themed desserts</li>
+            <li>Special orders upon request</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Gallery</h3>
+        <div class="gallery">
+            <div class="gallery-item"><img src="https://via.placeholder.com/250" alt="Cake 1"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/250" alt="Cake 2"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/250" alt="Pastry 1"></div>
+        </div>
+        <p>Follow us on <a href="https://instagram.com/LillabagerietM" target="_blank">Instagram</a> for more photos and updates!</p>
+    </section>
+
+    <section class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: lillabageriet@example.com</p>
+        <p>Phone: +46 123 456 789</p>
+        <p>Location: Jönköping, Sweden</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Lilla Bageriet</p>
+</footer>
+
+</body>
+</html>
