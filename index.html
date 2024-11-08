@@ -14,25 +14,24 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat', sans-serif; /* Aplicamos Montserrat */
             background-image: url('https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/fondo.jpg');
             background-size: cover;
             background-position: center;
-            color: #4b3832;
+            color: #4b3832; /* Café oscuro */
             height: 100%;
         }
 
         /* Encabezado */
         header {
             position: relative;
-            color: white;
             text-align: center;
             padding: 50px 20px;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente para contraste */
         }
         header h1 {
-            font-size: 4.5em;
-            color: #ffffff;
+            font-size: 4.5em; /* Título más grande */
+            color: #ffffff; /* Blanco */
             margin-bottom: 10px;
         }
         header p {
@@ -43,15 +42,14 @@
         .logo {
             position: absolute;
             top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 120px;
+            left: 20px; /* Alinea el logo a la izquierda */
+            width: 120px; /* Tamaño del logo */
             height: auto;
         }
         .instagram-link {
             display: inline-block;
             padding: 12px 24px;
-            background-color: #4b3832;
+            background-color: #4b3832; /* Café oscuro */
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -59,7 +57,7 @@
             transition: background-color 0.3s;
         }
         .instagram-link:hover {
-            background-color: #2f1e17;
+            background-color: #2f1e17; /* Café más oscuro */
         }
         
         /* Sección de productos */
@@ -73,7 +71,7 @@
             justify-content: space-around;
         }
         .product-card {
-            background-color: #fff;
+            background-color: #fff; /* Blanco */
             width: 300px;
             border-radius: 10px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -91,7 +89,7 @@
         }
         .product-card h2 {
             font-size: 1.8em;
-            color: #4b3832;
+            color: #4b3832; /* Café oscuro */
             margin: 15px 0;
         }
         .product-card p {
@@ -103,17 +101,17 @@
         
         /* Sección de contacto */
         .contact-section {
-            background-color: #ffffff;
+            background-color: #ffffff; /* Fondo blanco */
             padding: 40px 20px;
             text-align: center;
         }
         .contact-section h2 {
             font-size: 2em;
-            color: #4b3832;
+            color: #4b3832; /* Café oscuro */
             margin-bottom: 20px;
         }
         .contact-section p {
-            font-size: 1em;
+            font-size: 1em; /* Ajustado el tamaño de la fuente */
             color: #555;
         }
         
@@ -121,8 +119,8 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #4b3832;
-            color: #fff;
+            background-color: #4b3832; /* Café oscuro */
+            color: #fff; /* Blanco */
             font-size: 0.9em;
         }
 
@@ -136,23 +134,6 @@
             }
             header p {
                 font-size: 1.2em; /* Reducir tamaño de la descripción en móviles */
-            }
-            header {
-                padding: 30px 15px; /* Ajustar el padding para que todo quede bien alineado en móvil */
-            }
-            .product-section {
-                flex-direction: column; /* Hacer que los productos se apilen en lugar de estar uno al lado del otro */
-                align-items: center; /* Centrar los productos */
-            }
-            .product-card {
-                width: 90%; /* Hacer los productos más pequeños en pantallas móviles */
-                margin-bottom: 20px; /* Separar los productos */
-            }
-            .contact-section h2 {
-                font-size: 1.5em; /* Reducir el tamaño del título */
-            }
-            .contact-section p {
-                font-size: 1em; /* Ajustar el tamaño de la fuente */
             }
         }
     </style>
