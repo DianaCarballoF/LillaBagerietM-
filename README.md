@@ -19,7 +19,7 @@
         
         /* Encabezado */
         header {
-            background-image: url('https://via.placeholder.com/1200x600'); /* Reemplaza con una imagen de tus productos */
+            background-image: fondo.jpg
             background-size: cover;
             background-position: center;
             color: white;
@@ -128,12 +128,12 @@
 
     <section class="product-section">
     <div class="product-card">
-        <img src="https://github.com/Diana Carballo F/LillaBagerietM-/documentos/PAN%20DE%20MUERTO.jpg" alt="Pan de Muerto">
+        <img src="https://github.com/Diana Carballo F/LillaBagerietM-/PAN DE 20MUERTO.jpg" alt="Pan de Muerto">
         <h2>Pan de Muerto</h2>
         <p>This traditional Mexican bread is a seasonal favorite, ideal for celebrating Día de Muertos or any occasion.</p>
     </div>
     <div class="product-card">
-        <img src="https://github.com/Diana Carballo F/LillaBagerietM-/documentos/ALFAJOJRES.jpg" alt="Alfajores">
+        <img src="https://github.com/Diana Carballo F/LillaBagerietM-/ALFAJOJRES.jpg" alt="Alfajores">
         <h2>Alfajores</h2>
         <p>Delicate cookies filled with dulce de leche, perfect for indulging yourself or as a gift for loved ones.</p>
     </div>
