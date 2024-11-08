@@ -13,8 +13,8 @@
         }
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #faf3e0;
-            color: #333;
+            background-color: #f5f5dc; /* Beige */
+            color: #4b3832; /* Café oscuro */
         }
         
         /* Encabezado */
@@ -28,7 +28,7 @@
         }
         header h1 {
             font-size: 3.5em;
-            color: #c95b72;
+            color: #4b3832; /* Café oscuro */
             margin-bottom: 10px;
         }
         header p {
@@ -39,7 +39,7 @@
         .instagram-link {
             display: inline-block;
             padding: 12px 24px;
-            background-color: #c95b72;
+            background-color: #4b3832; /* Café oscuro */
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -48,7 +48,7 @@
             transition: background-color 0.3s;
         }
         .instagram-link:hover {
-            background-color: #a9455c;
+            background-color: #2f1e17; /* Café más oscuro */
         }
         
         /* Sección de productos */
@@ -62,7 +62,7 @@
             justify-content: space-around;
         }
         .product-card {
-            background-color: #fff;
+            background-color: #fff; /* Blanco */
             width: 300px;
             border-radius: 10px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -80,7 +80,7 @@
         }
         .product-card h2 {
             font-size: 1.8em;
-            color: #c95b72;
+            color: #4b3832; /* Café oscuro */
             margin: 15px 0;
         }
         .product-card p {
@@ -92,13 +92,13 @@
         
         /* Sección de contacto */
         .contact-section {
-            background-color: #f1e4d3;
+            background-color: #f0e4d7; /* Beige más claro */
             padding: 40px 20px;
             text-align: center;
         }
         .contact-section h2 {
             font-size: 2em;
-            color: #c95b72;
+            color: #4b3832; /* Café oscuro */
             margin-bottom: 20px;
         }
         .contact-section p {
@@ -110,8 +110,8 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
-            color: #fff;
+            background-color: #4b3832; /* Café oscuro */
+            color: #fff; /* Blanco */
             font-size: 0.9em;
         }
     </style>
