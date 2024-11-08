@@ -19,7 +19,7 @@
         
         /* Encabezado */
         header {
-            background-image: url('https://github.com/TU_USUARIO/TU_REPOSITORIO/fondo.jpg?raw=true');
+            background-image: url('https://github.com/Diana Carballo F/LillaBagerietM-/fondo.jpg?raw=true');
             background-size: cover;
             background-position: center;
             color: white;
