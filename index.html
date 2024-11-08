@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilla Bageriet M</title>
-    <!-- Enlace a Google Fonts (Montserrat) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Estilos generales */
+        /* Reset CSS */
         * {
             margin: 0;
             padding: 0;
@@ -15,165 +14,127 @@
         }
 
         body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #fef4e3; /* Fondo suave */
-            color: #4b3832; /* Color cálido para el texto */
-            height: 100%;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f7f7f7; /* Fondo gris suave */
+            color: #5e5e5e;
             line-height: 1.6;
             padding: 0;
-            font-size: 16px;
+            margin: 0;
         }
 
         /* Encabezado */
         header {
+            background: #ffffff;
             text-align: center;
-            padding: 50px 20px;
-            background-color: #fff7e1; /* Fondo cálido */
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            padding: 80px 20px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
         }
-
         header h1 {
-            font-size: 4em;
-            color: #4b3832;
-            margin-bottom: 10px;
+            font-size: 3.2em;
+            color: #d78a61; /* Naranja suave para un toque acogedor */
+            font-family: 'Playfair Display', serif;
             font-weight: 600;
         }
-
         header p {
-            font-size: 1.2em;
-            color: #4b3832;
-            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #a6a6a6;
+            margin-top: 10px;
             font-weight: 400;
         }
-
-        header .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            max-width: 120px;
-            height: auto;
-        }
-
-        header .cta-button {
+        .instagram-link {
             display: inline-block;
-            padding: 12px 24px;
-            background-color: #4b3832;
+            background-color: #f4a261; /* Color suave */
             color: #fff;
-            text-decoration: none;
+            padding: 12px 30px;
+            margin-top: 20px;
             border-radius: 25px;
-            font-size: 1.1em;
             font-weight: 600;
-            transition: background-color 0.3s;
-            margin-top: 15px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .instagram-link:hover {
+            background-color: #e07b3c; /* Color más oscuro en hover */
         }
 
-        header .cta-button:hover {
-            background-color: #2f1e17;
-        }
-
-        /* Sección de productos */
+        /* Sección de Productos */
         .product-section {
-            max-width: 1000px;
-            margin: 50px auto;
             display: flex;
+            justify-content: space-between;
             flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 30px;
+            margin: 40px auto;
+            max-width: 1200px;
             padding: 0 20px;
         }
-
         .product-card {
             background-color: #fff;
-            width: 300px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
             overflow: hidden;
+            width: 32%;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
             text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s ease;
         }
-
         .product-card:hover {
             transform: scale(1.05);
         }
-
         .product-card img {
             width: 100%;
-            height: auto;
+            height: 200px;
             object-fit: cover;
+            border-bottom: 2px solid #f0f0f0;
         }
-
         .product-card h2 {
-            font-size: 1.8em;
-            color: #4b3832;
-            margin: 15px 0;
+            font-size: 1.7em;
+            color: #d78a61; /* Color cálido para los títulos */
+            margin-top: 20px;
+            font-family: 'Playfair Display', serif;
         }
-
         .product-card p {
-            color: #777;
-            font-size: 1.1em;
-            padding: 0 15px;
+            font-size: 1em;
+            color: #707070;
+            padding: 0 20px;
             margin-bottom: 20px;
         }
 
         /* Sección de contacto */
         .contact-section {
-            background-color: #fff;
-            padding: 50px 20px;
+            background-color: #ffffff;
+            padding: 60px 20px;
             text-align: center;
-            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
         }
-
         .contact-section h2 {
-            font-size: 2em;
-            color: #4b3832;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .contact-section p {
-            font-size: 1em;
-            color: #555;
+            font-size: 2.2em;
+            color: #d78a61;
             margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
         }
-
-        .contact-section a {
+        .contact-section p {
             font-size: 1.1em;
-            color: #4b3832;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .contact-section a:hover {
-            color: #2f1e17;
+            color: #707070;
         }
 
         /* Pie de página */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #4b3832;
-            color: #fff;
-            font-size: 0.8em;
+            background-color: #f7f7f7;
+            font-size: 0.9em;
+            color: #5e5e5e;
+            margin-top: 50px;
         }
 
-        /* Estilos para dispositivos móviles */
+        /* Estilo para dispositivos móviles */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 3em;
-            }
-
-            header p {
-                font-size: 1em;
-            }
-
             .product-section {
                 flex-direction: column;
-                gap: 20px;
+                align-items: center;
             }
-
             .product-card {
                 width: 80%;
-                margin: 0 auto;
+                margin-bottom: 20px;
             }
         }
     </style>
@@ -181,11 +142,9 @@
 <body>
 
 <header>
-    <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/LOGO.png" alt="Logo Lilla Bageriet" class="logo">
     <h1>Lilla Bageriet M</h1>
     <p>Handcrafted baked goods with love</p>
-    <p>Located in Jönköping, Sweden</p>
-    <a href="https://www.instagram.com/LillabagerietM/" class="cta-button" target="_blank">Follow us on Instagram</a>
+    <a href="https://www.instagram.com/LillabagerietM/" class="instagram-link" target="_blank">Follow us on Instagram</a>
 </header>
 
 <section class="product-section">
@@ -194,21 +153,21 @@
             <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/ALFAJOJRES.jpg" alt="Alfajores">
         </a>
         <h2>Alfajores</h2>
-        <p>Delicate cookies filled with dulce de leche, chocolate, or Biiscoff, perfect for indulging yourself or as a gift.</p>
+        <p>Delicate cookies filled with dulce de leche, chocolate, or Biiscoff, perfect for indulging yourself or as a gift for loved ones.</p>
     </div>
     <div class="product-card">
         <a href="https://www.instagram.com/LillabagerietM/" target="_blank">
             <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/PAN%20DE%20MUERTO.jpg" alt="Pan de Muerto">
         </a>
         <h2>Pan de Muerto</h2>
-        <p>This traditional Mexican bread is a seasonal favorite, ideal for Día de Muertos or any special occasion.</p>
+        <p>This traditional Mexican bread is a seasonal favorite, ideal for celebrating Día de Muertos or any occasion.</p>
     </div>
 </section>
 
 <section class="contact-section">
     <h2>Contact Us</h2>
-    <p>We're located in Jönköping, Sweden</p>
-    <p>Have a question or want to place an order? Email us at <a href="mailto:carballodianalaura@gmail.com">carballodianalaura@gmail.com</a></p>
+    <p>Located in Jönköping, Sweden</p>
+    <p>For orders or inquiries, email us at <a href="mailto:carballodianalaura@gmail.com">carballodianalaura@gmail.com</a></p>
 </section>
 
 <footer>
@@ -217,4 +176,3 @@
 
 </body>
 </html>
-
