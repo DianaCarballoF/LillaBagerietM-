@@ -41,8 +41,8 @@
         }
         .logo {
             position: absolute;
-            top: 30px;
-            left: 30px; /* Alinea el logo a la izquierda */
+            top: 20px;
+            left: 20px; /* Alinea el logo a la izquierda */
             width: 120px; /* Tamaño del logo */
             height: auto;
         }
@@ -126,7 +126,8 @@
 
         /* Estilos para dispositivos móviles */
         @media (max-width: 768px) {
-            .logo left: 0;
+            .logo {
+                left: 0;
                 right: 0;
                 margin: 0 auto; /* Centra el logo en dispositivos móviles */
                 width: 100px; /* Reducir el tamaño del logo en móviles */
@@ -143,10 +144,10 @@
 <body>
 
     <header>
-        <!-- Logo en la esquina superior izquierda -->
+        <!-- Logo en la esquina superior izquierda en pantallas grandes, centrado en móviles -->
         <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/LOGO.png" alt="Logo Lilla Bageriet" class="logo">
-        <h1>Lilla Bageriet M</h1>
-        <p>Handcrafted baked goods with a touch of tradition</p>
+        <h1>Lilla Bageriet</h1>
+        <p>Handcrafted Baked Goods with a Touch of Tradition</p>
         <a href="https://www.instagram.com/LillabagerietM/" class="instagram-link" target="_blank">
             Visit Our Instagram
         </a>
@@ -158,7 +159,7 @@
                 <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/ALFAJOJRES.jpg" alt="Alfajores">
             </a>
             <h2>Alfajores</h2>
-            <p>Delicate cookies filled with dulce de leche, chocolate or Biscoff, perfect for indulging yourself or as a gift for loved ones.</p>
+            <p>Delicate cookies filled with dulce de leche, perfect for indulging yourself or as a gift for loved ones.</p>
         </div>
         <div class="product-card">
             <a href="https://www.instagram.com/LillabagerietM/" target="_blank">
@@ -180,3 +181,4 @@
 
 </body>
 </html>
+
