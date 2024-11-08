@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilla Bageriet</title>
     <style>
+        /* Reset de estilos básicos */
         * {
             margin: 0;
             padding: 0;
@@ -12,80 +13,84 @@
         }
         body {
             font-family: 'Arial', sans-serif;
-            color: #333;
-            background-color: #f7f3e9;
+            color: #4d4d4d;
+            background-color: #fffaf1;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px;
+            line-height: 1.6;
         }
+        /* Encabezado */
         header {
-            width: 100%;
-            max-width: 800px;
             text-align: center;
-            padding: 20px;
-            background-color: #ffe6e6;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
         }
         header h1 {
-            font-size: 2.5em;
-            color: #d14169;
+            font-size: 3em;
+            color: #c95b72;
         }
-        main {
-            width: 100%;
-            max-width: 800px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        main p {
-            font-size: 1.1em;
+        header p {
+            font-size: 1.2em;
             color: #666;
-            margin-bottom: 20px;
         }
+        /* Botón de Instagram */
         .instagram-link {
             display: inline-block;
             padding: 12px 24px;
-            background-color: #d14169;
+            background-color: #c95b72;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            margin-top: 10px;
             transition: background-color 0.3s;
         }
         .instagram-link:hover {
-            background-color: #b7325a;
+            background-color: #a9455c;
         }
-        .product-gallery {
+        /* Sección de productos */
+        .product-section {
+            width: 100%;
+            max-width: 800px;
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 20px;
+            justify-content: center;
             margin-top: 20px;
         }
-        .product {
-            width: 100px;
-            height: 100px;
-            background-color: #ffe6e6;
-            border-radius: 8px;
+        .product-card {
+            width: 100%;
+            max-width: 300px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
             transition: transform 0.3s;
         }
-        .product:hover {
+        .product-card:hover {
             transform: scale(1.05);
         }
-        .product img {
+        .product-card img {
             width: 100%;
-            height: 100%;
+            height: auto;
             object-fit: cover;
         }
+        .product-card h2 {
+            font-size: 1.5em;
+            color: #c95b72;
+            margin: 15px 0;
+        }
+        .product-card p {
+            padding: 0 15px;
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        /* Pie de página */
         footer {
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 0.9em;
             color: #999;
         }
@@ -95,21 +100,24 @@
 
     <header>
         <h1>Lilla Bageriet</h1>
-    </header>
-
-    <main>
-        <p>Welcome to Lilla Bageriet, where each treat is crafted with love and perfection. Discover our delicious selection of pastries on Instagram!</p>
+        <p>Artisan Pastries Crafted with Love</p>
         <a href="https://www.instagram.com/LillabagerietM/" class="instagram-link" target="_blank">
             Follow us on Instagram
         </a>
+    </header>
 
-        <div class="product-gallery">
-            <div class="product"><img src="https://via.placeholder.com/100" alt="Product 1"></div>
-            <div class="product"><img src="https://via.placeholder.com/100" alt="Product 2"></div>
-            <div class="product"><img src="https://via.placeholder.com/100" alt="Product 3"></div>
-            <div class="product"><img src="https://via.placeholder.com/100" alt="Product 4"></div>
+    <section class="product-section">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Pan de Muerto">
+            <h2>Pan de Muerto</h2>
+            <p>A traditional Mexican bread, perfect for Día de Muertos or any occasion. Soft, flavorful, and made with care.</p>
         </div>
-    </main>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Alfajores">
+            <h2>Alfajores</h2>
+            <p>Delicious dulce de leche-filled cookies, a sweet treat that melts in your mouth with each bite.</p>
+        </div>
+    </section>
 
     <footer>
         &copy; 2024 Lilla Bageriet. All rights reserved.
