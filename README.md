@@ -19,7 +19,7 @@
         
         /* Encabezado */
         header {
-            background-image: url('https://github.com/Diana Carballo F/LillaBagerietM-/fondo.jpg?raw=true');
+            background-image: url('https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/fondo.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -128,20 +128,20 @@
 
     <section class="product-section">
         <div class="product-card">
-            <img src="https://github.com/Diana Carballo F/LillaBageriettM-/pan-de-muerto.jpg?raw=true" alt="Pan de Muerto">
-            <h2>Pan de Muerto</h2>
-            <p>This traditional Mexican bread is a seasonal favorite, ideal for celebrating Día de Muertos or any occasion.</p>
-        </div>
-        <div class="product-card">
-            <img src="https://github.com/Diana Carballo F/LillaBageriettM-/alfajores.jpg?raw=true" alt="Alfajores">
+            <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/ALFAJOJRES.jpg" alt="Alfajores">
             <h2>Alfajores</h2>
             <p>Delicate cookies filled with dulce de leche, perfect for indulging yourself or as a gift for loved ones.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/docs/PAN%20DE%20MUERTO.jpg" alt="Pan de Muerto">
+            <h2>Pan de Muerto</h2>
+            <p>This traditional Mexican bread is a seasonal favorite, ideal for celebrating Día de Muertos or any occasion.</p>
         </div>
     </section>
 
     <section class="contact-section">
         <h2>Contact Us</h2>
-        <p>Have a question or want to place an order? Email us at <a href="mailto:carballodianalaura@gmail.com">carballodianalaura@gmail.com</a></p>
+        <p>Have a question or want to place an order? Email us at <a href="mailto:lillabageriet@example.com">lillabageriet@example.com</a></p>
     </section>
 
     <footer>
