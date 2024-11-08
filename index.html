@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilla Bageriet M</title>
+    <!-- Enlace a Google Fonts (Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* Estilos generales */
         * {
@@ -12,39 +14,19 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Montserrat', sans-serif; /* Aplicamos Montserrat */
             background-color: #f5f5dc; /* Beige */
             color: #4b3832; /* Café oscuro */
+        }
+        
+        /* Encabezado */
+        header {
             background-image: url('https://raw.githubusercontent.com/DianaCarballoF/LillaBagerietM-/main/fondo.jpg');
             background-size: cover;
             background-position: center;
-            height: 100vh; /* Extiende la imagen de fondo por toda la página */
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Menú de hamburguesa */
-        .menu-toggle {
-            display: none;
-            cursor: pointer;
-        }
-
-        .menu-toggle span {
-            display: block;
-            width: 25px;
-            height: 3px;
-            background-color: #fff;
-            margin: 5px auto;
-            transition: 0.3s;
-        }
-
-        /* Encabezado */
-        header {
             color: white;
             text-align: center;
             padding: 80px 20px;
-            position: relative;
-            z-index: 2;
         }
         header h1 {
             font-size: 3.5em;
@@ -112,7 +94,7 @@
         
         /* Sección de contacto */
         .contact-section {
-            background-color: #fff; /* Blanco */
+            background-color: #ffffff; /* Fondo blanco */
             padding: 40px 20px;
             text-align: center;
         }
@@ -135,28 +117,26 @@
             font-size: 0.9em;
         }
 
-        /* Estilos para dispositivos pequeños */
+        /* Menú móvil */
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+        .menu-icon div {
+            width: 30px;
+            height: 3px;
+            background-color: #4b3832; /* Café oscuro */
+        }
         @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            .product-section {
-                flex-direction: column;
-                align-items: center;
+            .menu-icon {
+                display: flex;
             }
         }
-
     </style>
 </head>
 <body>
-
-    <!-- Menú de hamburguesa -->
-    <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
 
     <header>
         <h1>Lilla Bageriet</h1>
@@ -165,6 +145,13 @@
             Visit Our Instagram
         </a>
     </header>
+
+    <!-- Menú de 3 rayitas para móviles -->
+    <div class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
     <section class="product-section">
         <div class="product-card">
